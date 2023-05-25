@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(70, 142, 236);
+    background-color: white;
     font: normal 15pt arial;
 }
 
@@ -16,7 +16,15 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.299);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+    text-align: center;
+}
+
+div#foto img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 20px;
 }
 
 footer {
