@@ -24,3 +24,10 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+img {
+    border-radius: 1000px;
+    padding: 20px;
+    height: 250px;
+    width: 250px;
+}
