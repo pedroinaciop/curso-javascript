@@ -31,7 +31,7 @@ console.log('FIM!')
     var end = 10
     var pass = 1
 
-    for ( var c = start; c <= end ; c+=pass ) {
+    for ( var c = start ; c <= end ; pass++ ) {
         console.log(c)
     }
         console.log('FIM!')
