@@ -1,4 +1,8 @@
-let array
+let totnum = 5
+let maiornum 
+let menornum
+let soma = 25
+let media = 5.312515
 
 function adicionar() {
     let tab = document.getElementById('seltab')
@@ -6,21 +10,23 @@ function adicionar() {
     var num = document.getElementById('inum')
     
     var num = Number(num.value)
-    
-    for (array = 0; array < 10 ; array++) {
-        item.text = `Valor ${num} adicionado.` 
-        item.value = `${num[array]}` 
+
+     for (let i = 0; i < 10; i++) {
+        let myArray = [i]
+        item.text = `Valor ${myArray[i]} adicionado.` 
+        item.value = `${myArray[i]}` 
         tab.appendChild(item)
-    }      
+     }
+
 }
 
 function finalizar() {
     var res = window.document.getElementById('res')
 
-    res.innerHTML = `Ao todo, temos 7 números cadastrados.`
-    res.innerHTML = `O maior valor informado foi`
-    res.innerHTML = `O menor valor informado foi `
-    res.innerHTML = `A soma de todos os valores foi`
-    res.innerHTML = `A média dos valores digitados é ` 
+    res.innerHTML = `<p>Ao todo, temos ${totnum} números cadastrados
+                    <p>O maior valor informado foi ${maiornum(Math.max(...myArray))}
+                    <p>O menor valor informado foi ${menornum(Math.min(...myArray))}
+                    <p>Somando todos os valores, temos ${soma}
+                    <p>A média dos valores digitados é ${media}.</p>`
 }
 
