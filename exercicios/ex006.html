@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 6</title>
+</head>
+<body>
+    <label for="inome">Nome: </label>
+    <input type="text" name="" id="inome">
+    <br><br>
+    <label for="isobrenome">Sobrenome: </label>
+    <input type="text" name="" id="isobrenome">
+    <br> <br>
+    <input type="button" value="Saudação" onclick="saudação()">
+    <script>
+        function saudação() {
+            var nome = document.getElementById('inome')
+            var sobrenome = document.getElementById('isobrenome')
+
+            window.alert(`Olá ${nome.value} ${sobrenome.value}`)
+        }
+    </script>
+</body>
+</html>

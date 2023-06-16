@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 3</title>
+</head>
+<body>
+    <label for="itext">Insira nessa campo qualquer palavra - (Dica quanto maior melhor!)</label><br><br>
+    <input type="text" name="" id="itext" placeholder="maior palavra que pensar">
+    <input type="button" value="Contar" onclick="contar()">
+    <hr>
+    <script>
+        function contar() {
+            let resultado = document.getElementById('itext')
+            window.alert(resultado.value + ' // ' + resultado.value.length)
+        }
+    </script>
+</body>
+</html>
