@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Example 07</title>
+</head>
+<body>
+    <label for="cpf">CPF: </label>
+    <input type="text" name="" id="cpf" maxlength="11">
+    <input type="button" type="submit" value="Validar" onclick="validar()">
+    <input type="button" value="Limpar" onclick="limpar()">
+    <script>
+        function validar() {
+            var CPF = document.getElementById('cpf')
+            var CPFatual = cpf.value
+
+            let cpfAtualizado
+            
+            cpfAtualizado = CPFatual.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, 
+            function(regex, argumento1, argumento2, argumento3, argumento4 ) {
+                    return argumento1 + '.' + argumento2 + '.' + argumento3 + '-' + argumento4;
+            })  
+            CPF.value = cpfAtualizado; 
+            window.alert(`${CPF.value}`)
+        }
+            
+        function limpar() {
+            var cpflimpo = document.getElementById('cpf')
+            cpflimpo.value = ''
+        }
+  
+    </script>
+</body>
+</html>
