@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Example 9</title>
+</head>
+<body>
+    <label for="soma1">Insira um número: </label>
+    <input type="text" name="" id="soma1"> <br> <br>
+    <label for="soma2">Insira outro número: </label>
+    <input type="text" name="" id="soma2"> <br> <br>
+    <input type="button" value="SOMAR" onclick="somar()">
+    <script>
+        function somar() {
+            var num1 = document.getElementById('soma1').value
+            var num2 = document.getElementById('soma2').value
+            var soma = Number(num1) + Number(num2)
+            
+
+            window.alert(`${soma}`)
+        }
+    </script>
+</body>
+</html>
