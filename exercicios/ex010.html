@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 10</title>
+    <style>
+        div#quadrado {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado"></div>
+    <input type="button" value="VERDE" onclick="verde()">
+    <input type="button" value="VERMELHO" onclick="vermelho()">
+    <script>
+        function verde() {
+            let verde = document.getElementById('quadrado')
+            verde.style.background = 'green'
+        }
+
+        function vermelho() {
+            let vermelho = document.getElementById('quadrado')
+            vermelho.style.background = 'red'
+        }
+    </script>
+</body>
+</html>
