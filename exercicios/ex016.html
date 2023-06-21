@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 16</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div#res { 
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>LOJA DOS 5% DE DESCONTO!</h1>
+    <label for="inum">DIGITE O VALOR A SER DESCONTADO: </label>
+    <input type="text" name="" id="inum">
+    <input type="button" value="CALCULAR" onclick="desconto()">
+    <div id="res"></div>
+    <script>
+        function desconto() {
+            let num = document.getElementById('inum')
+            let resultado = Number(num.value) * 0.05
+            res.innerHTML = (`5% de ${num.value} é: ${resultado}`)
+        }
+    </script>
+</body>
+</html>

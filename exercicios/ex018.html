@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 18</title>
+</head>
+<body>
+    <h1>PALAVRA PRA REPETIR 20X!</h1>
+    <label for="irepetir">Insira uma palavra: </label>
+    <input type="text" name="" id="irepetir">
+    <input type="button" value="REPETIR" onclick="repetir()">
+    <div id="resultado"></div>
+    <script>
+        function repetir() {
+            resultado.innerHTML = ''
+
+            for ( var i=0; i<20; i++) {
+                let repetir = document.getElementById('irepetir') 
+                document.getElementById('resultado').innerHTML += `${repetir.value} <br>`
+            }
+        }
+    </script>
+</body>
+</html>

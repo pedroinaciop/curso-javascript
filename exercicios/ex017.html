@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 17</title>
+</head>
+<body>
+    <h1>SUA IDADE!</h1>
+    <label for="iidade">Insira aqui sua idade: </label>
+    <input type="text" name="" id="iidade">
+    <input type="button" value="CALCULAR" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            let idade = document.getElementById('iidade')
+            if (idade.value < 18) {
+                res.innerHTML = 'MENOR DE IDADE!'
+            } else {
+                res.innerHTML = 'MAIOR DE IDADE!'
+            }
+        }
+    </script>
+</body>
+</html>
