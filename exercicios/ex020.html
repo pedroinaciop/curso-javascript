@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 20</title>
+</head>
+<body>
+    <h1>REPETIR UMA PALAVRA 5X COM WHILE</h1>
+    <label for="ipalavra">Insira um palavra pra repetir: </label>
+    <input type="text" name="" id="ipalavra">
+    <input type="button" value="REPETIR" onclick="repetir()">
+    <div id="res"></div>
+    <script>
+        function repetir () {
+            let palavra = document.getElementById('ipalavra')
+            let count = 0
+            while (count < 5) {
+                res.innerHTML = res.innerHTML + `${palavra.value} <br>`
+                count++
+            }
+        }
+    </script>
+</body>
+</html>

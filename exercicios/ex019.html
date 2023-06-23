@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR EACH</title>
+</head>
+<body>
+    <h1>ESCREVA 5X A PALAVRA INSERIDA</h1>
+    <label for="ipalavra">Insira a palavra que será repetida: </label>
+    <input type="text" name="" id="ipalavra">
+    <input type="button" value="PRINTAR" onclick="printar()">
+    <div id="res"></div>
+    <script>
+        function printar() {
+
+            const myArray = []
+                size = 5
+                for (let i=0;i<size;i++) {
+                myArray.push(document.getElementById('ipalavra').value + '<br>')
+            }
+
+            myArray.forEach(element => {
+                res.innerHTML = `${myArray}`
+            });
+        }
+        
+    </script>
+</body>
+</html>
