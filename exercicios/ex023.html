@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 23</title>
+</head>
+<body>
+    <h1>20 números pares</h1>
+    <input type="button" value="EXECUTAR" onclick="pares()">
+    <div id="res"></div>    
+    <script>
+        function pares() {
+            res.innerHTML = ''
+            for (let i=1;i<21;i++) {
+                if (i%2==0) {
+                res.innerHTML += `${i} ` 
+                }
+            }
+        }
+    </script>
+</body>
+</html>

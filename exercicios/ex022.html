@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 22</title>
+</head>
+
+<body>
+    <h1>Númeral entre 10 números de sua escolha</h1>
+    <label for="inuminicial">Insira o número inicial: </label>
+    <input type="text" name="" id="inuminicial"> <br> <br>
+    <label for="inumfinal">Insira o número final: </label>
+    <input type="text" name="" id="inumfinal"> <br> <br>
+    <input type="button" value="NUMERAR" id="enter" onclick="numerar()">
+    <div id="res"></div>
+    <script>
+        function numerar() {
+            let numinicial = document.getElementById('inuminicial')
+            let numfinal = document.getElementById('inumfinal')
+
+            if (numfinal.value < numinicial.value) {
+                alert('[ERRO] - Número final maior que inicial')
+            }
+            
+            res.innerHTML = ''
+            if (Math.abs(numinicial.value - numfinal.value) <= 9) {
+                for (let i = numinicial.value; i <= numfinal.value; i++) {
+                    res.innerHTML += `${i} `
+                }
+            } else {
+                alert('[ERRO] - Números estão a mais de 10(dez) números de distância')
+            }
+        }
+
+        document.addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+                var btn = document.querySelector("#enter");
+                btn.click();
+            }
+        });
+    </script>
+</body>
+
+</html>

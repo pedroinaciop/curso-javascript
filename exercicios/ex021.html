@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 21</title>
+</head>
+<body>
+    <h1>REPETINDO PALAVRA 5X - DO WHILE</h1>
+    <label for="ipalavra">Insira a palavra que será repetida: </label>
+    <input type="text" name="" id="ipalavra">
+    <input type="button" value="REPETIR" id="enter" onclick="repetir()">
+    <input type="button" value="LIMPAR" onclick="limpar()">
+    <div id="res"></div>
+    <script>
+        function limpar() {
+            res.innerHTML = ''
+        }
+
+        function repetir() {
+            let palavra = document.getElementById('ipalavra')
+            let i = 0
+            do {
+                res.innerHTML += `${palavra.value} <br>`
+                i++
+            } while (i < 5)
+        }
+
+         document.addEventListener("keypress", function(e) {
+            if(e.key === 'Enter') {
+            var btn = document.querySelector("#enter");
+            btn.click();
+        }
+        });
+    </script>
+</body>
+</html>
