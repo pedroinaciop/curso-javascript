@@ -1,10 +1,16 @@
-var variavel1 = 1;
-var variavel2 = 6;
+var stringExemplo = "Aprendendo JavaScript na DevMedia!";
 
-if (Math.abs(variavel1 - variavel2) <= 4) {
-    // As variáveis estão a até cinco números de distância
-    console.log("SIM");
-} else {
-    // As variáveis estão a uma distância maior do que cinco números
-    console.log("NÃO");
-}
+// Valor retornado: 25
+stringExemplo.indexOf("DevMedia");
+
+// Valor retornado: 6
+stringExemplo.indexOf("en", 4);
+
+// Valor retornado: 11
+stringExemplo.indexOf("Java", -8);
+
+// Valor retornado: -1
+stringExemplo.indexOf(".NET");
+
+// Valor retornado: 12
+stringExemplo.indexOf("a");

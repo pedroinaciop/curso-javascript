@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 25</title>
+</head>
+
+<body>
+    <h1>DESCUBRA A PALAVRA ALEATÓRIA</h1>
+        <label for="itext">TEXTO: </label>
+        <input type="text" name="" id="itext">
+    <br>
+    <br>
+        <label for="ipalavra">TERMO A SER ENCONTRADO: </label>
+        <input type="text" name="" id="ipalavra"> 
+    <br>
+    <br>
+        <input type="button" value="VERIFICAR" onclick="localizarString()">
+        <div id="resultado"></div>
+    <script>
+        function localizarString() {
+            let text = document.getElementById('itext').value
+            let palavra = document.getElementById('ipalavra').value
+
+            var posicao = text.indexOf(palavra)
+            var resultado;
+
+            if (posicao === -1) {
+                resultado = 'Elemento não encontrado no texto'
+            } else {
+                resultado = 'A posição do elemento é: ' + posicao
+            }
+            document.getElementById('resultado').innerHTML = resultado
+        }
+    </script>
+</body>
+
+</html>

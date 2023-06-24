@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="et-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 24</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(110, 110, 252);
+            color: white;
+        }
+
+        div#res {
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TABUADA</h1>
+    <label for="inum">INSIRA UM NÚMERO: </label>
+    <input type="text" name="" id="inum">
+    <input type="button" value="CALCULAR" id="enter" onclick="tabuada()">
+    <div id="res"></div>
+    <script>
+        function tabuada() {
+            let num = document.getElementById('inum')
+
+            res.innerHTML = ''
+            for (let i=1;i<11;i++) {
+                let resposta
+                resposta = i*num.value
+                res.innerHTML += `${i} x ${num.value} = ${resposta} <br>`
+            }
+        }
+
+        document.addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+                var btn = document.querySelector("#enter");
+                btn.click();
+            }
+        });
+    </script>
+</body>
+</html>
