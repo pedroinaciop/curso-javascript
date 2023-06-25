@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 26</title>
+    <style>
+        body {
+            background-color: rgb(66, 66, 202);
+        }
+
+        section {
+            background-color: white;
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>TESTE SUA SORTE!</h1>
+        <label for="inum">TENTE ACERTAR O NÚMERO DA SORTE: </label>
+        <input type="text" name="" id="inum">
+        <input type="button" value="ESTOU COM SORTE!" id="enter" onclick="testaSorte()">
+        <div id="meu_num"></div>
+        <div id="random_num"></div>
+    </section>
+    <script>
+        function testaSorte() {
+            let num = document.getElementById('inum')
+            let num1 = (Math.floor(Math.random() * 100));
+
+            if (num.value == num1) {
+                alert('PARABÉNS - VOCÊ ACABA DE GANHAR R$10.000')
+            } else {
+                alert('SE FUFU')
+            }
+
+            meu_num.innerHTML = num.value
+            random_num.innerHTML = num1
+        }
+
+        document.addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+                var btn = document.querySelector("#enter");
+                btn.click();
+            }
+        });
+    </script>
+</body>
+
+</html>
