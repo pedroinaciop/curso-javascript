@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 29</title>
+</head>
+<body>
+    <div id="res"></div>
+    <script>
+        nomMes = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho","Agosto", "Outubro", "Novembro", "Dezembro")
+        today = new Date()
+        m = today.getMonth()
+        document.getElementById('res').innerHTML = nomMes[today.getMonth() + 1]
+    </script>
+</body>
+</html>

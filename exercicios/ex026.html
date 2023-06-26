@@ -19,7 +19,7 @@
 <body>
     <section>
         <h1>TESTE SUA SORTE!</h1>
-        <label for="inum">TENTE ACERTAR O NÚMERO DA SORTE: </label>
+        <label for="inum">TENTE ACERTAR O NÚMERO DA SORTE: (1 a 100)</label>
         <input type="text" name="" id="inum">
         <input type="button" value="ESTOU COM SORTE!" id="enter" onclick="testaSorte()">
         <div id="meu_num"></div>
@@ -28,7 +28,7 @@
     <script>
         function testaSorte() {
             let num = document.getElementById('inum')
-            let num1 = (Math.floor(Math.random() * 100));
+            let num1 = (Math.floor(Math.random() * 101));
 
             if (num.value == num1) {
                 alert('PARABÉNS - VOCÊ ACABA DE GANHAR R$10.000')

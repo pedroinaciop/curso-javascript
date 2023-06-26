@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 27</title>
+</head>
+<body>
+    <h1>DATA DE HOJE - FIXA</h1>
+    <div id="res"></div>
+    <script>
+        monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+        now = new Date
+        
+        document.write(now.getDate() +' / '+ monName[now.getMonth()] + ' / ' + now.getFullYear() + '<br>')
+        document.write(now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ':' + now.getMilliseconds())
+    </script>
+</body>
+</html>

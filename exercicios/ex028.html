@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 28</title>
+</head>
+<body onload="time()">
+    <div id="txt"></div>
+    <script>
+        function time() {
+            today = new Date()
+            h = today.getHours()
+            m = today.getMinutes()
+            s = today.getSeconds()
+            ms = today.getMilliseconds()
+            document.getElementById('txt').innerHTML = h + ':' + m + ':' + s + ':' + ms
+            setTimeout('time()',500)
+        }
+    </script>
+</body>
+</html>
