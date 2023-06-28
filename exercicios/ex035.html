@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 35</title>
+</head>
+<body>
+    <h2>TRABALHANDO COM ARRAY - MAP, REDUCE, FILTER</h2>
+    <div id="resMap"></div>
+    <div id="resReduce"></div>
+    <div id="resFilter"></div>
+    <script>
+        var deuses = ['Aegir', 'Aud', 'Balder','Fenrir'];
+
+        // Usando a função map com callback
+        deuses.map(function(deus) {
+        resMap.innerHTML += `${deus} `
+        });
+
+        // Usando a função reduce com callback 
+        deuses.reduce(function(_, deus) {
+        resReduce.innerHTML += `${deus} `
+        });
+
+        // Usando a função filter com callback
+        deuses.filter(function(deus) {
+        resFilter.innerHTML += `${deus} `
+        });
+    </script>
+</body>
+</html>
