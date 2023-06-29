@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 39</title>
+</head>
+
+<body>
+    <h2>TRABALHANDO COM ARRAY</h2>
+    <label for="iaddArray">Insira um elemento no Array: </label>
+    <input type="text" name="" id="iaddArray">
+    <input type="button" value="ADICIONAR" id="enter" onclick="adicionar()">
+    <div id="nomes"></div>
+    <script>
+        function adicionar() {
+            var myArray = []
+            var addArray = document.getElementById('iaddArray')
+            
+            myArray.push(`${addArray.value}, `)
+            nomes.innerHTML += `${myArray} ${myArray.length}`
+        }
+
+        document.addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+                var btn = document.querySelector("#enter");
+                btn.click();
+            }
+        });
+    </script>
+</body>
+
+</html>

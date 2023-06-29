@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exemplo 36</title>
+</head>
+<body>
+    <h2>TRABALHANDO COM ARRAY - SORT</h2>
+    <div id="res"></div>
+    <script>
+        var numbers = [5,7,1,8,9];
+
+        let numDecrescente = numbers.sort (function (a, b) {
+            return b - a
+        })
+
+        res.innerHTML = `${numDecrescente}` 
+    </script>
+</body>
+</html>

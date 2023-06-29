@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Armazenar conteúdo em um array</title>
+</head>
+<body>
+  <input type="text" id="inputField">
+  <button onclick="armazenarConteudo()">Adicionar</button>
+  <div id="res"></div>
+
+  <script>
+    function armazenarConteudo() {
+      var input = document.getElementById('inputField');
+      var conteudo = input.value;
+      
+      if (conteudo !== '') {
+        var resDiv = document.getElementById('res');
+        resDiv.innerHTML += '<p>' + conteudo + conteudo.length + '</p>';
+        
+        input.value = ''; // Limpar o campo de texto após adicionar o conteúdo
+        
+        // Armazenar o conteúdo em um array (opcional)
+        if (typeof armazenado === 'undefined') {
+          var armazenado = [];
+        }
+        armazenado.push(conteudo);
+        
+        console.log(armazenado); // Exibir o array no console (opcional)
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
